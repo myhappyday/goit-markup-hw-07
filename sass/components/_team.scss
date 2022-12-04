@@ -5,7 +5,7 @@
   background-color: $section-bg-color;
 }
 
-.team-title {
+.team__title {
   margin-top: 0;
   margin-bottom: 50px;
   font-size: 36px;
@@ -13,21 +13,19 @@
   letter-spacing: 0.03em;
 }
 
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
+.team__list {
+  @extend %grid;
 }
 
-.team-item {
-  width: calc((100% - 90px) / 4);
+.team__item {
+  @include widthItem(4);
   background-color: $primary-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: $indent;
+  }
 }
 
 .team-card {

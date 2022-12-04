@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.work-title {
+.work__title {
   margin-top: 0;
   margin-bottom: 50px;
   font-size: 36px;
@@ -11,26 +11,22 @@
   letter-spacing: 0.03em;
 }
 
-.work-list {
-  display: flex;
-  flex-wrap: wrap;
+.work__list {
+  @extend %grid;
+  .img-wrapper {
+    position: relative;
+  }
 }
 
-.work-item {
-  width: calc((100% - 60px) / 3);
+.work__item {
+  @include widthItem(3);
+  &:not(:last-child) {
+    margin-right: $indent;
+  }
 }
 
-.work-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.work-list .img-wrapper {
-  position: relative;
-}
-
-.work-description {
+.work__description {
   position: absolute;
-  /* top: 0; */
   right: 0;
   bottom: 0;
   left: 0;

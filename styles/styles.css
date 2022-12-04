@@ -57,7 +57,7 @@ p {
   margin: 0;
 } */
 
-img {
+/* img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -72,7 +72,7 @@ img {
 .link {
   text-decoration: none;
   color: inherit;
-}
+} */
 
 /* .visually-hidden {
   position: absolute;
@@ -89,11 +89,7 @@ img {
 
 /* -------------------- Header styles --------------------*/
 
-.page-header {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  right: 0; */
+/* .page-header {
   border-bottom: 1px solid var(--second-border-color);
 }
 
@@ -182,7 +178,6 @@ img {
   left: 0;
   right: 0;
   width: 100%;
-  /* height: 4px; */
   border-bottom: 4px solid var(--accent-color);
   border-radius: 2px;
 }
@@ -198,7 +193,7 @@ img {
 
 /* -------------------- Hero styles --------------------*/
 
-.hero {
+/* .hero {
   max-width: 1600px;
   height: 600px;
   margin-right: auto;
@@ -243,11 +238,11 @@ img {
   color: var(--primary-white-logo-color);
   background-color: var(--accent-color);
   cursor: pointer;
-}
+} */
 
 /* -------------------- Benefits styles --------------------*/
 
-.benefits {
+/* .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -266,7 +261,6 @@ img {
 }
 
 .benefits-icons {
-  /* padding: 25px 100px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,11 +284,11 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-}
+} */
 
 /* -------------------- Work styles --------------------*/
 
-.work {
+/* .work {
   padding-bottom: 94px;
   text-align: center;
 }
@@ -325,8 +319,6 @@ img {
 }
 
 .work-description {
-  position: absolute;
-  /* top: 0; */
   right: 0;
   bottom: 0;
   left: 0;
@@ -341,11 +333,11 @@ img {
   text-transform: uppercase;
   color: var(--primary-white-logo-color);
   background-color: var(--description-bg-color);
-}
+} */
 
 /* -------------------- Team styles --------------------*/
 
-.team {
+/* .team {
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
@@ -382,7 +374,6 @@ img {
 }
 
 .team-item-subtitle {
-  /* margin-top: 30px; */
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -434,11 +425,11 @@ img {
 
 .social-icon {
   fill: currentColor;
-}
+} */
 
 /* -------------------- Customers styles --------------------*/
 
-.customers {
+/* .customers {
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
@@ -488,11 +479,11 @@ img {
 
 .customer-icon {
   fill: currentColor;
-}
+} */
 
 /* -------------------- Footer styles --------------------*/
 
-.footer {
+/* .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--second-bg-color);
@@ -663,11 +654,11 @@ address {
 .send-icon {
   fill: var(--primary-white-logo-color);
   margin-left: 10px;
-}
+} */
 
 /* -------------------- Portfolio styles --------------------*/
 
-.portfolio {
+/* .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -795,11 +786,11 @@ address {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-}
+} */
 
 /* -------------------- Modal styles --------------------*/
 
-.modal-backdrop {
+/* .modal-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -877,7 +868,6 @@ address {
 
 .modal-form {
   position: relative;
-  /* padding: 40px; */
 }
 
 .modal-label {
@@ -1033,4 +1023,4 @@ address {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #188ce8;
-}
+} */

@@ -1,3 +1,19 @@
-@import './base/variables';
-@import './base/base';
+// Utils
+@import './utils/variables';
 @import './utils/visually-hidden';
+
+// Base style
+@import './base/common';
+@import './base/container';
+@import './base/reset';
+
+// Components
+@import './components/page-header';
+@import './components/hero';
+@import './components/benefits';
+@import './components/work';
+@import './components/team';
+@import './components/customers';
+@import './components/footer';
+@import './components/portfolio';
+@import './components/modal-form';

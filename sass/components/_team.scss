@@ -70,9 +70,7 @@
   height: 100%;
   border-radius: 50%;
   color: $social-media-color;
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transColorBg();
   &:hover,
   &:focus {
     background-color: $accent-color;

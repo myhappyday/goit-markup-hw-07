@@ -24,8 +24,6 @@
   letter-spacing: 0.03em;
   color: $primary-white-logo-color;
   @include transition(color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: $accent-color;
@@ -39,8 +37,6 @@
   letter-spacing: 0.03em;
   color: $footer-link-color;
   @include transition(color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: $accent-color;

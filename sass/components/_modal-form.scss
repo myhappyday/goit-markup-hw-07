@@ -1,4 +1,4 @@
-.modal-backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,13 +10,13 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-backdrop.is-hidden {
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
 
-.modal-backdrop.is-hidden .modal {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.5);
 }
 
@@ -26,9 +26,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(transform);
   min-width: 528px;
   min-height: 581px;
   background-color: $primary-bg-color;
@@ -37,7 +35,7 @@
   border-radius: 4px;
 }
 
-.modal .modal-close {
+.modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -56,14 +54,13 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 
-.close-icon:hover,
-.close-icon:focus {
-  fill: $accent-color;
-}
-
-.modal-text {
+.modal__text {
   margin-bottom: 12px;
   font-family: inherit;
   font-weight: 700;
@@ -74,11 +71,11 @@
   color: $primary-text-color;
 }
 
-.modal-form {
+.modal__form {
   position: relative;
 }
 
-.modal-label {
+.modal__label {
   display: block;
   width: 100%;
   margin-bottom: 4px;
@@ -97,7 +94,7 @@
   position: relative;
 }
 
-.modal-input {
+.modal__input {
   width: 100%;
   height: 40px;
   padding: 0 12px 0 42px;
@@ -106,6 +103,10 @@
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    outline: transparent;
+    border: 1px solid $accent-color;
+  }
 }
 
 .input-icon {
@@ -119,13 +120,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus,
-.modal-textarea:focus {
-  outline: transparent;
-  border: 1px solid $accent-color;
-}
-
-.modal-input:focus + .input-icon {
+.modal__input:focus + .input-icon {
   fill: $accent-color;
 }
 
@@ -133,7 +128,7 @@
   margin-bottom: 20px;
 }
 
-.modal-textarea {
+.modal__textarea {
   display: block;
   width: 100%;
   height: 120px;
@@ -144,9 +139,13 @@
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    outline: transparent;
+    border: 1px solid $accent-color;
+  }
 }
 
-.modal-textarea::placeholder {
+.modal__textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -205,7 +204,7 @@
   color: $accent-color;
 }
 
-.modal-btn {
+.modal__btn {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -226,9 +225,8 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: $accent-color-btn;
+  &:hover,
+  &:focus {
+    background-color: $accent-color-btn;
+  }
 }

@@ -1,3 +1,11 @@
 @mixin widthItem($items) {
   width: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
 }
+
+@mixin transition($property) {
+  $duration: 250ms;
+  $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+}

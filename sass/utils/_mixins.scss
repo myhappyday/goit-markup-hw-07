@@ -2,36 +2,8 @@
   width: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
 }
 
-@mixin transition($property) {
+@mixin transition($property...) {
   transition-property: $property;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@mixin transColorBg($property1: color, $property2: background-color) {
-  transition-property: $property1, $property2;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@mixin transColorBorderColor($property1: color, $property2: border-color) {
-  transition-property: $property1, $property2;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@mixin transOpacityVisibility($property1: opacity, $property2: visibility) {
-  transition-property: $property1, $property2;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@mixin transColorBgShadow(
-  $property1: color,
-  $property2: background-color,
-  $property3: box-shadow
-) {
-  transition-property: $property1, $property2, $property3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

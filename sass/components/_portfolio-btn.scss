@@ -10,7 +10,7 @@
   letter-spacing: 0.03em;
   color: $primary-text-color;
   cursor: pointer;
-  @include transColorBgShadow();
+  @include transition(color, background-color, box-shadow);
   &:hover,
   &:focus {
     color: $primary-white-logo-color;

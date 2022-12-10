@@ -34,7 +34,7 @@
   border-radius: 4px;
   border: 1px solid $social-media-color;
   color: $social-media-color;
-  @include transColorBorderColor();
+  @include transition(color, border-color);
   &:hover,
   &:focus {
     color: $accent-color;
